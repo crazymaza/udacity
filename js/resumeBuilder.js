@@ -10,6 +10,39 @@
 $("#header").prepend(formRole);
 $("#header").prepend(formName);
 
+
+/*Добавляем имя, фамилию и другие данные с помощью 
+объекта*/
+var bio = {
+	"Firstname" : "Игорь",
+	"Lastname" : "Вальнев",
+	"contacts" : 89067150583,
+	"image" : "images/fry.jpg",
+	"skils" : [
+		"Ученье",
+		"свет",
+		"а",
+		"неученье",
+		"чуть",
+		"свет",
+		"и",
+		"на",
+		"работу"
+	],
+	"message" : "Welcome to my homepage!"
+};
+
+$("#main").append(bio.Firstname);
+
+/*Создаем пустой объект, а потом добавляем к нему свойства*/
+var work = {};
+work.city = "Раменское";
+work.age = 8;
+work["status"] = "stoped";
+work["interesting"] = "no";
+
+$("#main").append(work.city);
+$("#main").append(work["status"]);
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
