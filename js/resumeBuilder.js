@@ -13,7 +13,7 @@ $("#header").prepend(formName);
 
 /*Добавляем имя, фамилию и другие данные с помощью 
 объекта*/
-var bio = {
+/*var bio = {
 	"Firstname" : "Игорь",
 	"Lastname" : "Вальнев",
 	"contacts" : 89067150583,
@@ -33,17 +33,48 @@ var bio = {
 };
 
 $("#main").append(bio.Firstname);
-
+*/
 /*Создаем пустой объект, а потом добавляем к нему свойства*/
-var work = {};
+/*var work = {};
 work.city = "Раменское";
 work.age = 8;
 work["status"] = "stoped";
 work["interesting"] = "no";
 
 $("#main").append(work.city);
-$("#main").append(work["status"]);
+$("#main").append(work["status"]);*/
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
 
+/*Рассказ о моей карьере, учебе, курсах. JSON*/,
+
+/*Работа: Работадатель, название, где находится, стаж*/
+var work = {
+	"jobs": [
+ 	{
+ 		"employer" : "МЧС России",
+ 		"title": "ОНД по Раменскому району",
+ 		"location" : "Раменский район Московская область",
+ 		"dates" : "2008-2017"
+ 	},
+ 	{
+ 		"employer" : "ООО Аплана",
+ 		"title": "Аплана",
+ 		"location" : "Москва",
+ 		"dates" : "2017-н.в"
+ 	}]
+ }
+ var projects ={
+ 	"projects" : [
+ 	{
+ 		"title" : "Сайт ОНД по Раменскому р-ну",
+ 		"dates" : "2017-2017",
+ 		"description" : "Сайт ОНД по Раменскому р-ну"
+ 	},
+ 	{
+ 		"title" : "Сайт PhotonSecurity.ru",
+ 		"dates" : "2017-н.в.",
+ 		"description" : "Сайт фирмы по пожарной сигнализации"
+ 	}]
+}
