@@ -47,7 +47,7 @@ $("#main").append(work["status"]);*/
 This is empty on purpose! Your code to build the resume will go here.
  */
 
-/*Рассказ о моей карьере, учебе, курсах. JSON*/,
+/*Рассказ о моей карьере, учебе, курсах. JSON*/
 
 /*Работа: Работадатель, название, где находится, стаж*/
 var work = {
